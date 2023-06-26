@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+h1 {
+  background-image: url('http://unblast.com/wp-content/uploads/2021/01/Space-Background-Image-2.jpg');
+  color: #F0F8FF;
+  font-family: 'Times New Roman', serif;
+  font-size: 600%;
+  text-align: center;
+}
+body {
+  background-image: url('https://media.tenor.com/f5mKLXp4HtkAAAAC/clouds-night.gif');
+background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+ padding: 20px;
+}
+
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+h3{
+ 
+ color: #F0F8FF;
+  font-family: 'Times New Roman', serif;
+  font-size: 300%;
+  text-align: center;
+   background-color: black;
+}
+h5{
+color: #F0F8FF;
+  font-family: 'Times New Roman', serif;
+  font-size: 100%;
+  
+   background-color: black;
+}
+
+</style>
+</head>
+<body>
+<h1>A. P. J. Abdul Kalam</h1>
+<h3 >The Missile Man of India</h3>
+<center><img src="https://track2traininginstitute.files.wordpress.com/2021/07/apj.jpg"></img></center>
+<h3 style="font-size:200%;">let's take a look at his journey</h3>
+<h5><ul><li>Abdul Kalam was born as Avul Pakir Jainulabdeen Abdul Kalam</li>
+<li>He served as the 11th president of India from 2002-07.</li>
+<li> Kalam started working at a very young age since he came from a very poor background.</li>
+<li>It is even said, that, to support his family, Kalam used to distribute newspapers after school.</li>
+<li>He did not score good grades but was described as a bright and hardworking student.</li>
+<li>It is also said that he always had a strong desire to learn.</li>
+<li>Abdul Kalam graduated with a degree in Physics in the year 1854.</li>
+<li> At Defense Research and Development Organisation (DRDO), Kalam designed a small helicopter for the Indian army.</li>
+<li> Kalam was transferred to ISRO in 1969 as the project director of India's first satellite launch vehicle (SLV-III) to deploy the Rohini satellite in the earth's orbit.</li>
+<li> Kalam is popularly known as the 'Missile Man of India' for his work on missile and launch vehicle technology.</li>
+<li>His books include Wings of Fire (his autobiography), India 2020- A Vision for the New Millenium, Ignited Minds, My Journey, The Luminous Sparks, Children ask Klama etc.</li>
+<li> In 2009, Kalam became the first Asian to be honoured with the Hoover Medal which is America's top engineering prize. He has also received honorrary doctorates from more than 30 universities.</li>
+<li> Kalam also got honoured by the Government of India with the Padma Bhushan in 1981 and the Padma Vibhushan in 1990.</li>
+<li> He has been honoured with the Bharat Ratna as well in 1997.</li>
+</ul></h5>
+<h3>Timeline</h3>
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>1931</h2>
+      <p> Born Avul Pakir Jainulabdeen Abdul Kalam on October 15, in Rameswaram, Tamil Nadu.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1954</h2>
+      <p> Graduates in Physics from Saint Joseph's College, Tiruchirappalli, in 1954.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1960</h2>
+      <p>Gains degree in Aeronautical Engineering from Madras Institute of Technology.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1969</h2>
+      <p>Transferred to ISRO from the DRDO.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1980</h2>
+      <p>India enters the space club by putting the Rohini satellite in the near earth orbit with the first indigenous Satellite Launch Vehicle (SLV-III), developed under the stewardship of Dr. Kalam.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1980s-1990s</h2>
+      <p>As the chief of the Integrated Guided Missile Development Programme, he was responsible for the development and operationalisation of AGNI and PRITHVI Missiles.</p>
+    </div>
+  </div>
+</div>
+  <div class="container left">
+    <div class="content">
+      <h2>1992-1999</h2>
+      <p>works as Chief Scientific Advisor to the PM and Secretary of the DRDO.</p>
+    </div>
+  </div>
+<div class="container right">
+    <div class="content">
+      <h2>1998</h2>
+      <p>India conducts the Pokhran II nuclear tests in May with Dr. Kalam as the chief project coordinator.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1999-2001</h2>
+      <p>Principal Scientific Advisor to the Government of India.</p>
+    </div>
+  </div>
+<div class="container right">
+    <div class="content">
+      <h2>2002-2007</h2>
+      <p> President of India</p>
+    </div>
+  </div>
+<h3 style="font-size:200%;">Achievements of APJ Abdul Kalam</h3>
+<h5>Abdul Kalam is one of the finest leaders of this country. He is admired for his achievements and led a very successful life. His way of living and his vision will continue to inspire people. 
+
+</h5><h5>Below is the list that tries to do honour to his countless achievements:</h5>
+
+<h5>In 1960, Dr Kalam joined the Defence Research and Development Organisation (DRDO) (DRDO) after he finished his graduation from the Madras Institute of Technology.</h5>
+<h5>In DRDO, Kalam was responsible for designing helicopters for the Indian Army. </h5>
+<h5>Dr Kalam was selected as the project director for SLV-III, India’s first indigenous satellite launch vehicle, after he joined the Indian Space Research Organisation (ISRO).</h5>
+<h5>After SLV-III was successful in launching the satellite Rohini to orbit in July 1980, Dr Kalam started expanding India’s space programme on a wider scale.</h5>
+
+<h3>Dr APJ Abdul Kalam’s Contribution to Missile Project</h3>
+<pre><h5>Under his command, he had a team of India’s best soldiers.
+He simultaneously served as Prime Minister’s Chief Scientific Adviser from July 1992 to December 1999, and also the Secretary of the Defence Research and Development Organisation (DRDO).
+In 1998, Kalam and Dr Soma Raju collaborated to design a low-cost coronary stent. The stent was dubbed the “Kalam-Raju Stent.” For rural health care, the “Kalam-Raju Tablet” was created in 2012.
+The Pokhran-II nuclear tests in 1998 proved India’s nuclear capabilities. Without Dr Kalam’s assistance, this project would not have been possible. Such weapons, he explained to the international community, would serve solely as “weapons of peace” to discourage other countries from the annexation of Indian territory.
+As the leader of India’s missile programme in the 1980s, political parties came together in 2002 to elect APJ Abdul Kalam as the country’s eleventh president.</h5></pre>
+<h3>A Well-Known Figure Around the World</h3>
+<pre><h5>Some of the best speeches ever delivered at the United Nations and European Union can be found in his fervent speeches. 
+Dr Kalam was appointed as a guest lecturer at the University of Delhi, after completion of  his term as President
+As lecturer, he wrote extensively and supported a number of youth development initiatives. 
+India as a mighty force is depicted in his works of fiction: Wings of Fire and India 2020. Throughout his life, he worked tirelessly to make the world a better place through his writings, lectures and other endeavours.
+</h5></pre>
+</body>
+</html>
